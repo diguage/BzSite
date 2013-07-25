@@ -4,7 +4,7 @@
       <div class="span4">
          <!-- Widget 1 -->
          <div class="widget">
-            <h4>About Us</h4>
+            <h4>关于我们</h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras elementum dolor eget nisi fermentum quis hendrerit magna vestibulum. </p>
              <ul>
                <li><a href="#">Sed eu leo orci, condimentum gravida metus</a></li>
@@ -15,7 +15,7 @@
       <div class="span4">
          <!-- widget 2 -->
          <div class="widget">
-            <h4>Recent Posts</h4>
+            <h4>最新产品</h4>
                <ul>
                   <li><a href="#">Sed eu leo orci, in rhoncus puru condimentum gravida metus</a></li>
                   <li><a href="#">Etiam at in rhoncus puru nulla ipsum, in rhoncus purus</a></li>
@@ -26,7 +26,7 @@
       <div class="span4">
          <!-- Widget 3 -->
          <div class="widget">
-            <h4>Categories</h4>
+            <h4>网站地图</h4>
             <ul>
                <li><a href="#">Condimentum</a></li>
                <li><a href="#">Etiam at</a></li>
@@ -39,7 +39,17 @@
       
       <div class="span12"><hr /><p class="copy">
       <!-- Copyright information. You can remove my site link. -->
-               Copyright &copy; <a href="#">Your Site</a> | Designed by <a href="http://responsivewebinc.com">Responsive Web Design</a></p></div>
+               Copyright &copy; <%= link_to "HeNanWanTong.com", root_path %> | Developed by <a href="http://www.diguage.com">"地瓜哥"博客网</a></p></div>
     </div>
   </div>
 </footer>
+<script type="text/javascript">
+  $(function() {
+  
+  	$('#da-slider').cslider({
+  		autoplay	: true,
+  		interval : 6000
+  	});
+  
+  });
+</script>	
