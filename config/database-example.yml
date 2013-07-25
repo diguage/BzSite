@@ -3,8 +3,8 @@ defaults: &defaults
   encoding: utf8
   reconnect: false
   pool: 5
-  username: root
-  password: c35B626BBa07296e
+  username: my_user_name
+  password: my_passwd
   socket: /var/run/mysqld//mysqld.sock
 
 
