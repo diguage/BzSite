@@ -4,6 +4,8 @@ ruby '2.0.0'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0'
 
+gem "mysql2", "0.3.13"
+
 # Use sqlite3 as the database for Active Record
 group :development do
 end
@@ -14,12 +16,11 @@ group :test do
 end
 
 group :deployment, :test do
-  gem 'sqlite3', '1.3.7'
   gem 'rspec-rails', '2.13.1'
 end
 
 group :production do
-  gem "mysql2", "0.3.13"
+  gem "unicorn", "4.6.3"
 end
 
 # Use SCSS for stylesheets
