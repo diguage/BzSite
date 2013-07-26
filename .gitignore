@@ -30,4 +30,3 @@ pickle-email-*.html
 /public/assets/*
 /config/database.yml
 
-/public/baidu_map.html
