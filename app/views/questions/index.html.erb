@@ -1,0 +1,28 @@
+<div class="content">
+   <div class="container">
+      <div class="row">
+         <div class="span12">
+            <!-- FAQ starts -->
+            <div class="faq">
+               <div class="row">
+                  <div class="span12">
+                     <!-- FAQ hero -->
+                     <div class="hero">
+                        <!-- Title. Don't forget the <span> tag -->
+                        <h3><span>问题解答</span></h3>
+                        <!-- para -->
+                        <p>常见问题以及解答 | <a href="<%= new_question_path %>"> <input type="button" class="btn btn-large btn-primary" value="添加问题" /></a></p>
+                     </div>
+                     <!-- FAQ -->
+                     
+                     <div class="accordion" id="accordion2">
+                       <%= render @questions %>  
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- FAQ ends -->            
+         </div>
+      </div>
+   </div>
+</div>
