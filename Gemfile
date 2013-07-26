@@ -6,6 +6,8 @@ gem 'rails', '4.0.0'
 
 gem "mysql2", "0.3.13"
 
+gem "carrierwave", "0.9.0"
+
 # Use sqlite3 as the database for Active Record
 group :development do
 end
