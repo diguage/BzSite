@@ -5,9 +5,6 @@ class StaticPagesController < ApplicationController
   def service
   end
 
-  def faq
-  end
-
   def help
   end
 
