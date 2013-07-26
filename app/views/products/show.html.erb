@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @product.name %>
+</p>
+
+<p>
+  <strong>Prod model:</strong>
+  <%= @product.prod_model %>
+</p>
+
+<p>
+  <strong>Prod type:</strong>
+  <%= @product.prod_type %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @product.description %>
+</p>
+
+<p>
+  <strong>Feature:</strong>
+  <%= @product.feature %>
+</p>
+
+<p>
+  <strong>Parameter:</strong>
+  <%= @product.parameter %>
+</p>
+
+<p>
+  <strong>Picture:</strong>
+  <%= image_tag(@product.picture_url, :widht => 200) if @product.picture.present? %>
+</p>
+
+<%= link_to 'Edit', edit_product_path(@product) %> |
+<%= link_to 'Back', products_path %>
