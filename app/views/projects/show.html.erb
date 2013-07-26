@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @project.name %>
+</p>
+
+<p>
+  <strong>Customer name:</strong>
+  <%= @project.customer_name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @project.description %>
+</p>
+
+<p>
+  <strong>Characteristic:</strong>
+  <%= @project.characteristic %>
+</p>
+
+<p>
+  <strong>Picture:</strong>
+  <%= image_tag(@project.picture_url, :width => 150) if @project.picture.present? %>
+</p>
+
+<%= link_to 'Edit', edit_project_path(@project) %> |
+<%= link_to 'Back', projects_path %>
