@@ -1,4 +1,6 @@
 BzSite::Application.routes.draw do
+  resources :projects
+
   resources :products
 
 #  get "static_pages/home"
@@ -13,6 +15,8 @@ BzSite::Application.routes.draw do
   root "static_pages#home"
 #root to: 'static_pages#home'
 
+  match '/service',    to: 'static_pages#service',    via: 'get'
+  match '/faq',    to: 'static_pages#faq',    via: 'get'
   match '/help',    to: 'static_pages#help',    via: 'get'
   match '/about',   to: 'static_pages#about',   via: 'get'
   match '/contact', to: 'static_pages#contact', via: 'get'
