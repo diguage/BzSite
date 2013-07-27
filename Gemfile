@@ -8,6 +8,9 @@ gem "mysql2", "0.3.13"
 
 gem "carrierwave", "0.9.0"
 
+gem "kaminari", "0.14.1"
+gem "kaminari-bootstrap", "0.1.3"
+
 # Use sqlite3 as the database for Active Record
 group :development do
 end
