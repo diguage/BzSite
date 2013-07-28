@@ -70,4 +70,11 @@ BzSite::Application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
+  namespace :admin do
+    # Directs /admin/products/* to Admin::ProductsController
+    # (app/controllers/admin/products_controller.rb)
+    resources :sessions, only: [:new, :create, :destroy]
+    
+    match '/signin', to: 'sessions#new', via: 'get'
+  end
 end
