@@ -11,6 +11,7 @@ gem "carrierwave", "0.9.0"
 gem "kaminari", "0.14.1"
 gem "kaminari-bootstrap", "0.1.3"
 
+gem "faker", "1.2.0"
 # Use sqlite3 as the database for Active Record
 group :development do
 end
