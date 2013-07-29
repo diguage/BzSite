@@ -12,7 +12,12 @@ gem "kaminari", "0.14.1"
 gem "kaminari-bootstrap", "0.1.3"
 
 gem "faker", "1.2.0"
-# Use sqlite3 as the database for Active Record
+
+gem 'activeadmin',         github: 'gregbell/active_admin', branch: 'rails4'
+gem 'ransack',             github: 'ernie/ransack',         branch: 'rails-4'
+gem 'inherited_resources', github: 'josevalim/inherited_resources'
+gem 'formtastic',          github: 'justinfrench/formtastic'
+
 group :development do
 end
 
@@ -42,7 +47,7 @@ gem 'coffee-rails', '4.0.0'
 # gem 'therubyracer', platforms: :ruby
 
 # Use jquery as the JavaScript library
-gem 'jquery-rails', '2.2.1'
+gem 'jquery-rails', '3.0.4'
 
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks', '1.1.1'
