@@ -1,41 +1,15 @@
-<h1>Listing products</h1>
-
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Prod model</th>
-      <th>Prod type</th>
-      <th>Description</th>
-      <th>Feature</th>
-      <th>Parameter</th>
-      <th>Picture</th>
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @products.each do |product| %>
-      <tr>
-        <td><%= product.name %></td>
-        <td><%= product.prod_model %></td>
-        <td><%= product.prod_type %></td>
-        <td><%= product.description %></td>
-        <td><%= product.feature %></td>
-        <td><%= product.parameter %></td>
-        <td><%= image_tag(product.picture_url, :width => 60) if product.picture.present? %></td>
-        <td><%= link_to 'Show', product %></td>
-        <td><%= link_to 'Edit', edit_product_path(product) %></td>
-        <td><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-<hr />
-<%= paginate @products %>
-<hr />
-<br>
-
-<%= link_to 'New Product', new_product_path %>
+<div class="content">
+   <div class="container">            
+    <div class="blog">
+       <div class="row">
+         <div class="proliebiao">
+           <h2 class="proxiaotit">产品中心</h2>
+            <p class="proinfo">这是一篇长短您定的产品简介文字的概述内容这是一篇长短您定的产品简介文字的概述内容这是一篇长短您定的产品简介文字的概述内容这是一篇长短您定的产品简介文字的概述内容这是一篇长短您定的产品简介文字的概述内容</p>
+           <ol id="proitemol">
+             <%= render @products %>  
+           </ol>
+         </div>
+       </div>
+    </div>     
+   </div>
+</div>
