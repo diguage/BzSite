@@ -1,3 +1,24 @@
 // Place all the styles related to the Products controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.proliebiao{ min-height: 560px; _height:560px; padding-left: 10px;}
+.proliebiao p{line-height: 24px; font-size: 13px;}
+.proxiaotit{ font-size: 12px; line-height: 18px; color: #333333;  font-weight: bold; padding-left:20px;}
+.proliebiao .proinfo{ font-size: 12px; padding-left:20px;}
+#proitemol{/* width: 614px;*/ overflow: hidden; margin-top: 20px;}
+#proitemol li{ /*width: 307px;*/ width:430px; overflow: hidden; float:left; margin-top: 10px; padding-bottom:10px;}
+.proliebiao ol{ list-style:none;}
+.w80{width: 90%;margin: 0 auto;}
+.l{ float:left;}
+.proItemTit{ font-size: 12px; line-height: 15px; font-weight: bold; color:#333333; width: 100%; margin-bottom: 2px;}
+.proItemTit a{ color:#333333;}
+.proItemInfo{width: 100%;}
+.proItemInfo a{color:#666666;}
+.proItemA{ background: url(../images/solua.png); width: 96px; height: 23px;}
+.proItemimg{ padding: 5px; /*width: 130px;*/ width:160px; border: solid 1px #C6C6C6;}
+.proItemimg img{ /*width:130px; height:97px;*/ width:160px; height:120px;}
+
+.proItemright{ /*width: 145px;*/ width:240px; margin-left: 10px; padding-right: 5px;}
+.pro_single .pro_singleimg{ width:360px; margin:0 auto;}
+.pro_single .pro_singleimg img{ width:360px; height:240px;border: solid 1px #C6C6C6; padding:6px;}
+.pro_cont{ width:90%; margin:20px auto;}

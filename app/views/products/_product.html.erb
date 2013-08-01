@@ -1,0 +1,9 @@
+<li>
+  <div class="l proItemimg"><a href="<%= product_path(product) %>"><%= image_tag(product.picture_url, :width => 130, :height => 97) if product.picture.present? %></a> </div>
+  <div class="proItemright l">
+    <h2 class="proItemTit l"><a href="<%= product_path(product) %>"><%= product.name %></a></h2>
+    <p>产品型号：<%= product.prod_model %></p>
+    <p>产品类型：<%= product.prod_type %></p>
+    <p class="proItemInfo l">概述：<%= truncate(product.description, length: 60, truncate_string: "") %><%= link_to "详细信息…", product %></p>
+    <a class="proItemA l" href="#"></a> </div>
+</li>

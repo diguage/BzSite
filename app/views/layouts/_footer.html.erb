@@ -5,10 +5,10 @@
          <!-- Widget 1 -->
          <div class="widget">
             <h4>关于我们</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras elementum dolor eget nisi fermentum quis hendrerit magna vestibulum. </p>
+            <p>河南万通科技有限公司是集高清网络摄像机，数字NVR 的研发、生产及销售于一体的高科技企业。</p>
              <ul>
-               <li><a href="#">Sed eu leo orci, condimentum gravida metus</a></li>
-               <li><a href="#">Etiam at nulla ipsum, in rhoncus purus</a></li>
+               <li><%= link_to "公司简介", about_url %></li>
+               <li><%= link_to "联系我们", contact_url %></li>
              </ul>
          </div>
       </div>
@@ -17,9 +17,7 @@
          <div class="widget">
             <h4>最新产品</h4>
                <ul>
-                  <li><a href="#">Sed eu leo orci, in rhoncus puru condimentum gravida metus</a></li>
-                  <li><a href="#">Etiam at in rhoncus puru nulla ipsum, in rhoncus purus</a></li>
-                  <li><a href="#">Fusce vel magnain rhoncus puru faucibus felis dapibus facilisis</a></li>
+                 <%= render "layouts/latest_products", products: @latest_products %>
                </ul>
          </div>
       </div>
@@ -28,11 +26,10 @@
          <div class="widget">
             <h4>网站地图</h4>
             <ul>
-               <li><a href="#">Condimentum</a></li>
-               <li><a href="#">Etiam at</a></li>
-               <li><a href="#">Fusce vel</a></li>
-               <li><a href="#">Vivamus</a></li>
-               <li><a href="#">Pellentesque</a></li>
+               <li><%= link_to "产品中心", products_url %></li>
+               <li><%= link_to "工程案例", projects_url %></li>
+               <li><%= link_to "服务支持", service_url %></li>
+               <li><%= link_to "问题解答", questions_url %></li>
             </ul>
          </div>
       </div>
